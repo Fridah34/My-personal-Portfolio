@@ -3,22 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Fridah Nthambi | Portfolio</title>
   <!-- Bootstrap CDN -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-   <!-- FontAwesome for Icons -->
+  <!-- FontAwesome for Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand logo">Fridah Nthambi</a>
-      <div class="ms-auto">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-links">
-          <li class="nav-item"><a class="nav-link" href="#index">Home</a></li>
+      <a class="navbar-brand logo" href="#">Fridah Nthambi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav nav-links">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -27,177 +29,166 @@
     </div>
   </nav>
 
-  <!-- Landing Section -->
-  <section id="home" class="landing container d-flex align-items-center justify-content-between">
-    <div class="left-text">
-      <h1>Hi, my name is <span class="highlight"><br> Fridah Nthambi</span></h1>
-      <h2>I am <span id="typing"></span><span class="cursor">|</span></h2>
-      <div class="social-links mt-3">
-        <a href="https://github.com/Fridah34" target="_blank"><i class="fab fa-github"></i></a> 
-        <a href="https://www.linkedin.com/in/fridahnthambi/" target="_blank"><i class="fab fa-linkedin"></i></a> 
-        <a href="https://www.instagram.com/p_hree/" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="fridahnthambi69@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section container">
+    <div class="hero-content">
+      <div class="hero-img">
+        <img src="assets/profile picture.jpg" alt="Fridah Nthambi professional photo" />
       </div>
-      <a href="https://docs.google.com/document/d/1el-JSoQhUrhDPoePKI81ThB6GU-LpTlKpOqZ4t1TYfc/edit?usp=sharing" class="btn btn-primary mt-3" download>Download Resume</a>
-    </div>
-    <div class="right-image">
-      <img src="assets\profile picture.jpg" alt="Profile Picture" class="img-fluid rounded-circle"/>
+      <div class="hero-text">
+        <h1>Hi, my name is <span class="highlight">Fridah Nthambi</span></h1>
+        <h2>I am <span id="typing"></span><span class="cursor">|</span></h2>
+        <div class="social-links mt-3">
+          <a href="https://github.com/Fridah34" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/fridahnthambi/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.instagram.com/p_hree/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="mailto:fridahnthambi69@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+        </div>
+        <a href="https://docs.google.com/document/d/1el-JSoQhUrhDPoePKI81ThB6GU-LpTlKpOqZ4t1TYfc/edit?usp=sharing" class="btn btn-gold" download>Download Resume</a>
+      </div>
     </div>
   </section>
 
-  <!--About Section-->
-  <section id="about" class="section container py-5 text-light ">
-    <h3 class="text-center mb-4">About Me</h3>
-    <div class="row justify-content-center align-items-center">
-        <div class="col-md-6 text-center">
-             <p>
-          <strong>Fridah Nthambi</strong>, is a Bachelor of Science in Applied Computing student at KCA University, expected to graduate in December 2026.
-           She is a passionate and driven software developer focused on using technology to create meaningful and practical solutions.</p>
-        <p>
-          Fridah has expanded her knowledge through programs at ALX and GMI, where she gained hands-on experience in teamwork, backend development, and problem-solving.
-           Her standout achievements include collaborating on a fully functional donation website and contributing to innovative group projects through the ALX Professional Foundation Program.
-        </p>
-        <p>Her goal is to contribute to tech innovations that make an impact in sectors like education, finance, and public service. 
-            Fridah is committed to continuous learning and growth as she builds a career in software development.
-        </p>
+  <!-- About Section -->
+  <section id="about" class="container my-5">
+    <h3 class="section-title">About Me</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-8">
+        <div class="about-card">
+          <p>
+            <strong>Fridah Nthambi</strong> is an aspiring software developer and a Bachelor of Science in Applied Computing student at KCA University, expected to graduate in December 2026. Known for her curiosity and drive, Fridah is passionate about leveraging technology to create meaningful and practical solutions that improve everyday life.
+          </p>
+          <p>
+            As a dedicated learner, Fridah has built her personal brand around innovation, teamwork, and a commitment to excellence. She has expanded her skills through programs at ALX and GMI, gaining hands-on experience in backend development, collaborative problem-solving, and agile teamwork. Her professional tagline, "Building solutions, empowering people," reflects her mission to use code for positive impact.
+          </p>
+          <p>
+            Fridah’s achievements include collaborating on a fully functional donation website, contributing to innovative group projects through the ALX Professional Foundation Program, and consistently delivering high-quality work in both academic and extracurricular settings. Her goal is to contribute to tech innovations that make a difference in sectors like education, finance, and public service, while continuously learning and growing as a developer.
+          </p>
         </div>
+      </div>
     </div>
   </section>
 
-  <!--Projects  -->
-  <section id="projects" class="section container py-5">
-    <h4 class="text-center section-title">Projects</h4>
-    <div class="row justify-content-center align-items-start">
-        <!--language skills-->
-        <div class="col-md-6 mb-4">
-            <h5 class="text-center mb-3" style="color:#ffc300;">Language Skills</h5>
-            <div class="skills-list">
-                <div class="d-flex align-items-center mb-3">
-                    <i class="fab fa-html5 fa-2x me-3" style="color:#e44d26"></i>
-                    <span class="me-2" style="min-width:80px;">HTML5</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-warning" style="width: 95%;">95%</div>
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <i class="fab fa-css3-alt fa-2x me-3" style="color:#2965f1;"></i>
-          <span class="me-2" style="min-width:80px;">CSS3</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-info" style="width: 90%;">90%</div>
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <i class="fab fa-js-square fa-2x me-3" style="color:#f7df1e;"></i>
-          <span class="me-2" style="min-width:80px;">JavaScript</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-success" style="width: 70%;">70%</div>
-          </div>
-        </div>
-         <div class="d-flex align-items-center mb-3">
-          <i class="fab fa-python fa-2x me-3" style="color:#3776ab;"></i>
-          <span class="me-2" style="min-width:80px;">Python</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-primary" style="width: 50%;">50%</div>
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <i class="fab fa-bootstrap fa-2x me-3" style="color:#7952b3;"></i>
-          <span class="me-2" style="min-width:80px;">Bootstrap</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-secondary" style="width: 70%;">70%</div>
-          </div>
-        </div>
-        <div class="d-flex align-items-center mb-3">
-          <i class="fab fa-node-js fa-2x me-3" style="color:#68a063;"></i>
-          <span class="me-2" style="min-width:80px;">Node.js</span>
-          <div class="progress flex-grow-1 me-2" style="height: 18px;">
-            <div class="progress-bar bg-danger" style="width: 65%;">65%</div>
-          </div>
-      </div>
+  <!-- Projects Section -->
+  <section id="projects" class="container my-5">
+    <h4 class="section-title">Projects</h4>
+    <div class="skills-icons-row mb-4">
+      <i class="fab fa-html5 fa-2x mx-2" style="color:#e44d26;" title="HTML5"></i>
+      <i class="fab fa-css3-alt fa-2x mx-2" style="color:#2965f1;" title="CSS3"></i>
+      <i class="fab fa-js-square fa-2x mx-2" style="color:#f7df1e;" title="JavaScript"></i>
+      <i class="fab fa-python fa-2x mx-2" style="color:#3776ab;" title="Python"></i>
+      <i class="fab fa-bootstrap fa-2x mx-2" style="color:#7952b3;" title="Bootstrap"></i>
+      <i class="fab fa-node-js fa-2x mx-2" style="color:#68a063;" title="Node.js"></i>
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftexcel.svg" title="Excel" class="mx-2 skill-svg" alt="Excel">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftpowerpoint.svg" title="PowerPoint" class="mx-2 skill-svg" alt="PowerPoint">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/microsoftword.svg" title="Word" class="mx-2 skill-svg" alt="Word">
     </div>
-    <!-- Projects List -->
-    <div class="col-md-8 mb-4">
-      <h4 class="text-center mb-3" style="color:#ffc300;">My Projects</h4>
-      <div class="card bg-dark text-light mb-3">
-        <div class="card-body">
-          <h5 class="card-title"> My Portfolio Website</h5>
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-5 mb-4">
+        <div class="project-card h-100">
+          <h5 class="card-title">My Portfolio Website</h5>
           <p class="card-text">A personal portfolio website to showcase my projects, skills, and contact information. Built with HTML, CSS, JavaScript, and Bootstrap.</p>
           <span class="badge bg-warning text-dark me-1">HTML</span>
           <span class="badge bg-info text-dark me-1">CSS</span>
           <span class="badge bg-success text-dark me-1">JavaScript</span>
           <span class="badge bg-primary text-dark me-1">Bootstrap</span>
           <a href="https://github.com/Fridah34/My-personal-Portfolio" target="_blank" class="btn btn-outline-light btn-sm ms-2">
-                <i class="fab fa-github"></i> View on Github
-            </a>
+            <i class="fab fa-github"></i> View on Github
+          </a>
         </div>
       </div>
-      <div class="card bg-dark text-light mb-3">
-        <div class="card-body">
-          <h5 class="card-title">A bank Management System</h5>
-          <p class="card-text"> A web application used to manage transactions,its customers,offer loans and intergrated database. 
-            It has admin sections where only the admin is allowed to view the customers information.Built using HTML5,PHP,CSS,mySql and javaScript</p>
-            <span class="badge bg-danger me-1">JavaScript</span>
-            <span class="badge bg-warning me-1">HTML</span>
-            <span class="badge bg-info me-1">CSS</span>
-            <span class="badge bg-success me-1">MySQL</span>
-            <span class="badge bg-dark me-1">PHP</span>
-
-            <a href="https://github.com/Fridah34/ZeusBank" target="_blank" class="btn btn-outline-light btn-sm ms-2">
-                <i class="fab fa-github"></i> View on Github
-            </a>
+      <div class="col-md-6 col-lg-5 mb-4">
+        <div class="project-card h-100">
+          <h5 class="card-title">A Bank Management System</h5>
+          <p class="card-text">A web application used to manage transactions, its customers, offer loans and integrated database. Built using HTML5, PHP, CSS, MySQL and JavaScript.</p>
+          <span class="badge bg-danger me-1">JavaScript</span>
+          <span class="badge bg-warning me-1">HTML</span>
+          <span class="badge bg-info me-1">CSS</span>
+          <span class="badge bg-success me-1">MySQL</span>
+          <span class="badge bg-dark me-1">PHP</span>
+          <a href="https://github.com/Fridah34/ZeusBank" target="_blank" class="btn btn-outline-light btn-sm ms-2">
+            <i class="fab fa-github"></i> View on Github
+          </a>
         </div>
       </div>
-
-      <!-- Skills Icons Row -->
-  <div class="text-center mt-4">
-    <!-- Programming Languages -->
-    <i class="fab fa-html5 fa-2x mx-2" style="color:#e44d26;" title="HTML5"></i>
-    <i class="fab fa-css3-alt fa-2x mx-2" style="color:#2965f1;" title="CSS3"></i>
-    <i class="fab fa-js-square fa-2x mx-2" style="color:#f7df1e;" title="JavaScript"></i>
-    <i class="fab fa-python fa-2x mx-2" style="color:#3776ab;" title="Python"></i>
-    <i class="fab fa-bootstrap fa-2x mx-2" style="color:#7952b3;" title="Bootstrap"></i>
-    <i class="fab fa-node-js fa-2x mx-2" style="color:#68a063;" title="Node.js"></i>
-  </div>
-      <!-- Add more project cards as needed -->
-    </div>
     </div>
   </section>
-  <!--Contact Section-->
-  <!-- Contact Section -->
-<section id="contact" class="section container py-5">
-  <h3 class="text-center mb-4 section-title">Contact Me</h3>
-  <div class="row justify-content-center">
-    <div class="col-md-7">
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label text-light">Name</label>
-          <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+
+ <!-- Team Project Section -->
+<section id="team-project" class="container my-5">
+  <h3 class="section-title">Team Project (Phase 2)</h3>
+  <div class="row justify-content-center g-4">
+    <!-- Video Card -->
+    <div class="col-md-6">
+      <div class="about-card text-center h-100 d-flex flex-column align-items-center">
+        <p><strong>Project Demo Video</strong></p>
+        <div class="ratio ratio-16x9 mb-3" style="border-radius:12px; overflow:hidden;">
+          <iframe src="https://www.loom.com/embed/e481eafb86bc4f2fa508b930fbaa6693" frameborder="0" allowfullscreen></iframe>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label text-light">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
-        </div>
-        <div class="mb-3">
-          <label for="subject" class="form-label text-light">Subject</label>
-          <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label text-light">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mt-2">Send Message</button>
-      </form>
+        <a href="https://www.loom.com/share/e481eafb86bc4f2fa508b930fbaa6693?sid=9b923902-3263-4e26-81e4-ad2a1e397abb" target="_blank" class="btn btn-outline-light btn-lg mb-2">
+          <i class="fas fa-play"></i> Watch Project Demo
+        </a>
+      </div>
+    </div>
+    <!-- Slide Deck Card -->
+    <div class="col-md-6">
+      <div class="about-card text-center h-100 d-flex flex-column align-items-center">
+        <p><strong>Project Slide Deck</strong></p>
+        <!-- Slide Deck Thumbnail (replace src with your actual PDF cover or a screenshot image) -->
+        <a href="https://eu.docworkspace.com/d/sIF7F8L_2Aam5zsEG" target="_blank">
+          <img src="assets\slide deck.jpg" alt="Slide Deck Cover" class="img-fluid mb-3" style="max-height:220px; border-radius:12px; box-shadow:0 2px 8px rgba(10,25,49,0.12);">
+        </a>
+        <a href="https://eu.docworkspace.com/d/sIF7F8L_2Aam5zsEG" target="_blank" class="btn btn-outline-warning btn-lg mb-2">
+          <i class="fas fa-file-pdf"></i> View Slide Deck (PDF)
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="footer mt-auto py-4" style="background: #102347;">
-  <div class="container text-center">
-    <span class="text-light">&copy; 2025 Fridah Nthambi. All rights reserved.</span>
-  </div>
-</footer>
-  
+
+  <!-- Contact Section -->
+  <section id="contact" class="container my-5">
+    <h3 class="section-title">Contact Me</h3>
+    <div class="row justify-content-center">
+      <div class="col-md-7">
+        <div class="about-card">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="subject" class="form-label">Subject</label>
+              <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-4">
+    <div class="container text-center">
+      <span class="text-light">&copy; 2025 Fridah Nthambi. All rights reserved.</span>
+      <div class="mt-2">
+        <a href="https://github.com/Fridah34" target="_blank" class="text-light me-3"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/fridahnthambi/" target="_blank" class="text-light me-3"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/p_hree/" target="_blank" class="text-light me-3"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:fridahnthambi69@gmail.com" class="text-light"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
